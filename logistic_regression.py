@@ -7,15 +7,15 @@ from sklearn.linear_model import LogisticRegression
 
 st.set_page_config(
     page_title="Insurance purchase Prediction",
-    page_icon="💰",
+    page_icon="💵",
     layout="centered"
 )
 st.title("Insurance Purchase Prediction")
-st.write("Insurance Purchase Prediction by using logistic regression")
+st.write("Insurance Purchase Prediction")
 
 st.markdown("---")
 st.markdown("""
-👨‍💻 **Developed By:** Ayush kumar tiwari
+👨‍💻 **Developed By:** Ayush kumar TIWARI
 
 📧 Branch:**INFORMATION_TECHNOLOGY**,
     Room:**G-612**
@@ -84,14 +84,14 @@ st.write("### Try Your Own Prediction")
 user_age = st.number_input(
     "Enter Age:",
     min_value=1,
-    max_value=82,
-    value=35
+    max_value=90,
+    value=24
 )
 
 # Prediction function
 def prediction_function(age):
     # Example probability (replace with your ML model)
-    probability = age / 82
+    probability = age / 90
     probability = min(max(probability, 0), 1)
     return probability
 
