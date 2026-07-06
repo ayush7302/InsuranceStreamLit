@@ -10,8 +10,8 @@ st.set_page_config(
     page_icon="💵",
     layout="centered"
 )
-st.title("Insurance Purchase Prediction")
-st.write("Insurance Purchase Prediction")
+st.title("💵Insurance Purchase Prediction")
+st.write("💵Insurance Purchase Prediction")
 
 st.markdown("---")
 st.markdown("""
@@ -84,7 +84,7 @@ st.write("### Try Your Own Prediction")
 user_age = st.number_input(
     "Enter Age:",
     min_value=1,
-    max_value=90,
+    max_value=95,
     value=24
 )
 
